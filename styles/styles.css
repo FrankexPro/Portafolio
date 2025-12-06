@@ -1,0 +1,110 @@
+:root{
+    --color-1: #ffcf86;
+    --color-2: #3c413ae7;
+    --color-3: #593E25;
+    --color-4: #F2C12E;
+    --color-5: #024959;
+}
+@font-face {
+    font-family: "Minecraftia";
+    src: url("../fonts/Minecraftia-Regular.ttf") format("truetype");
+}
+h1, h2, h3, a, button {
+  font-family: 'Minecraftia', sans-serif;
+  padding-top: 0.6rem;
+}
+body {
+    background-image: url('../images/fondo2.png'); /* 🔹 ruta de la imagen */
+    background-size: cover;                       /* 🔹 ocupa todo el fondo */
+    background-repeat: no-repeat;                 /* 🔹 evita que se repita */
+    background-position: center; 
+    background-attachment: fixed;
+    margin: 0;
+}
+.header h1{
+    margin-left: 1rem;
+    font-size: 1.4rem;
+}
+.header{
+    background-color: var(--color-2);
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 4rem;
+    }
+.barra_navegacion{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 2rem;
+}
+.barra_navegacion a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.barra_navegacion a:hover {
+    color: white;
+    font-weight: 700;
+    transition: color 0.5s ease;
+}
+.download{
+    white-space: nowrap;
+    position: absolute;
+    display: flex;
+    left: 86%;
+    font-size: 1rem;
+    background: none;
+    border: 2px solid black;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-bottom: 0.1rem;
+    padding-top: 1rem;
+}
+.download:hover {
+  background-color: rgba(255, 224, 224, 0.062);
+  border-color: black;
+  color: white;
+  font-weight: 700;
+  transition: color 0.5s ease;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 5%;
+    height: 70vh;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+.hero-name {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    text-shadow: 3px 3px #000;
+}
+.hero-role {
+    font-size: 1.5rem;
+    color: #f2c12e;
+    text-shadow: 2px 2px #000;
+    margin: 0;
+}
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.icons img{
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(2px 2px 0 #000);
+}
